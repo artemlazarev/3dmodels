@@ -4,3 +4,5 @@
 
 Desing by using FreeCad 1.0.  Made reverse engineering of the joysticks positions on 8BitDo gamepad.  
 Made 3 3d prints befor first commit.  
+
+* 8bitdo-clr-holder.FCStd - under shelf holder for 8BitDo controller
