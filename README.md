@@ -9,5 +9,5 @@ Desing by using FreeCad 1.0.
 	Made 3 3d prints befor first commit.
 * [vesa200raspberypi5](vesa200raspberypi5.FCStd) - VESA200 bracket for raspberry Pi
 * [ender3peak](ender3peak.FCStd) - crest for 3d printer "ender 3 v3". A comb on top of the printer for clamping it in a "vice" adds stability to the printer.
-* [pipePlug](pipePlug.FCStd) - pipePlug + "joker pipe" =  tape roll holder
+* [pipePlug](pipePlug.FCStd) - pipePlug + pice of "joker pipe" =  tape roll holder
 
