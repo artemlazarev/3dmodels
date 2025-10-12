@@ -7,7 +7,7 @@ Desing by using FreeCad 1.0.
 * [8bitdo-clr-holder.FCStd](8bitdo-clr-holder.FCStd) - under shelf holder for 8BitDo controller. 
 	Made reverse engineering of the joysticks positions on 8BitDo gamepad.
 
-	![8bitdo-clr-holder](https://github.com/artemlazarev/3dmodels/blob/main/pic/8bitdo-clr-holder.JPG)
+	![8bitdo-clr-holder](./pic/8bitdo-clr-holder.jpg)
 
 * [vesa200raspberypi5](vesa200raspberypi5.FCStd) - VESA200 bracket for raspberry Pi
 
