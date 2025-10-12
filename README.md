@@ -1,6 +1,6 @@
 # 3dmodels
 
-**license** all files in repository is under  CC BY-S A 4.0  [Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/)
+**license** all files in repository is under  CC BY-NC 4.0  [Attribution-NonCommercial 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/ https://creativecommons.org/licenses/by-nc/4.0/)
 
 Desing by using FreeCad 1.0.  
 ---
