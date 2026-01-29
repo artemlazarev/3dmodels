@@ -2,8 +2,12 @@
 
 **license** all files in repository is under  CC BY-NC 4.0  [Attribution-NonCommercial 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/ https://creativecommons.org/licenses/by-nc/4.0/)
 
-Desing by using FreeCad 1.0.  
+Desing by using FreeCad 1.0.
 ---
+
+* [belt.scad](belt.scad) - 	parametric belt with holes for magnets latch
+
+	![belt.scad](.pic/IMG_20260130_010054.jpg)
 * [8bitdo-clr-holder.FCStd](8bitdo-clr-holder.FCStd) - under shelf holder for 8BitDo controller. 
 	Made reverse engineering of the joysticks positions on 8BitDo gamepad.
 
