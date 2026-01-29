@@ -6,8 +6,8 @@ Desing by using FreeCad 1.0.
 ---
 
 * [belt.scad](belt.scad) - 	parametric belt with holes for magnets latch
+	![belt.scad](./pic/IMG_20260130_010054.jpg)
 
-	![belt.scad](.pic/IMG_20260130_010054.jpg)
 * [8bitdo-clr-holder.FCStd](8bitdo-clr-holder.FCStd) - under shelf holder for 8BitDo controller. 
 	Made reverse engineering of the joysticks positions on 8BitDo gamepad.
 
