@@ -1,16 +1,17 @@
 // ===== ПАРАМЕТРЫ =====
-square_size     = 15;   // сторона квадрата (мм)
-cutout_size     = 6;    // сторона квадратного выреза (мм)
 
-count_x         = 6;    // количество обычных квадратов по X
-count_y         = 4;    // количество квадратов по Y
-
-thickness_z     = 0.8  ;    // толщина основной экструзии (мм)
+square_size     = 20;   // сторона квадрата (мм)
+cutout_size     = 16;    // сторона квадратного выреза (мм)
+count_x         = 9;    // количество обычных квадратов по X
+count_y         = 2;    // количество квадратов по Y
+extrusion_layer = 0.2;   // толщина основной экструзии (мм)
+thickness_z     = extrusion_layer*3;
 
 // Круглые вырезы
 circle_diameter = 6.25;    // диаметр круглых отверстий (мм)
-cylinder_height = 0.25;    // высота цилиндров (мм)
+cylinder_height = 2.4;    // высота цилиндров (мм)
 circle_offset   = 4;    // смещение от края квадрата (мм)
+layer = extrusion_layer*2; // слой над и под магнитами для их фиксации
 
 // ===== МОДУЛИ =====
 
@@ -30,16 +31,16 @@ module square_with_cutout() {
 // Квадрат с 4 круглыми вырезами
 module square_with_4_circles() {
     difference() {
-        cube([square_size, square_size, thickness_z]);
+        cube([square_size, square_size, cylinder_height + 2*layer]);
 
         for (sx = [circle_offset, square_size - circle_offset])
             for (sy = [circle_offset, square_size - circle_offset])
-                translate([sx, sy, 0])
+                translate([sx, sy, 0 + layer])
                     cylinder(
                         h = cylinder_height,
                         d = circle_diameter,
                         center = false,
-                        $fn = 48
+                        $fn = 50
                     );
     }
 }
@@ -62,7 +63,8 @@ for (y = [0 : count_y - 1]) {
 }
 
 // После последнего
-translate([0,square_size * count_y,thickness_z]) rotate(a=[180,0,0]) for (y = [0 : count_y - 1]) {
+//translate([0,square_size * count_y,thickness_z]) rotate(a=[180,0,0]) for (y = [0 : count_y - 1]) {
+for (y = [0 : count_y - 1]) {
     translate([count_x * square_size, y * square_size, 0])
         square_with_4_circles();
 }
